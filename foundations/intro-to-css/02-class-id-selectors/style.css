@@ -1,1 +1,19 @@
-/* Add CSS Styling */
+.odd-number {
+    background-color: rgb(224, 17, 95);
+    font-family: Verdana, "Dejavu Sans", sans-serif;
+}
+
+#id-one {
+    color: #3636f8;
+    font-size: 36px;
+}
+
+.update-font-size {
+    font-size: 24px;
+}
+
+#id-two {
+    background-color: hsl(120, 73%, 75%);
+    font-weight: 700;
+}
+
