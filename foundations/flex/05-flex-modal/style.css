@@ -20,6 +20,17 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+
+  display: flex;
+  padding: 10px;
+  gap: 20px;
+}
+
+.flex-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .icon {
@@ -33,6 +44,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  flex-shrink: 0;
 }
 
 .close-button {
@@ -48,6 +61,11 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 18px;
 }
 
 button {
@@ -66,4 +84,37 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+.continue,
+.cancel {
+  margin-top: 15px;
+}
+
+
+/* SOLUTION: */
+
+.modal {
+  /* display: flex; */
+  /* gap: 16px; */
+  /* padding: 16px; */
+}
+
+.icon {
+  /* this keeps the icon from getting smashed by the text */
+  /* flex-shrink: 0; */
+}
+
+/* header container should be wrapped around the button element as well in order for flex style to work */
+.header {
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  /* font-size: 18px; */
+  /* font-weight: 700; */
+  /* margin-bottom: 8px; */
+}
+
+.text {
+  /* margin-bottom: 16px; */
 }
